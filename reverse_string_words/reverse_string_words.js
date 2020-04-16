@@ -6,8 +6,8 @@
  * 
  * 保证空格
  */
+// 方法一 
 let reverseWords = (str) => {
-	if(!str) return;
 	// 对字符串按照空格进行分割 ， 数组的元素顺序就是单词的顺序
 	let arr = str.split(' ');
 	// 对数组 中的元素进行反转
@@ -16,7 +16,23 @@ let reverseWords = (str) => {
 		.reverse().join('')
 	})
 	return result.join(' ')
+ 
+	// return str.split(' ').map( item => {
+	// 	return item.split('').reverse().join('')
+	// }).join(' ')
 }
-let a = reverseWords('my name is tangqi ')
-console.log(a)
+
+let a = reverseWords("let's go to school")
+console.log(a,'s')
+
+/**
+ *难度大的算法 如何解？
+  算法的本质是寻找规律并实现
+ * 如何找规律？
+ 发现输入 和输出的关系，寻找突破点
+
+ * 复杂的实现怎么办？
+ 实现是  程序 + 数据结构 
+
+ */
 // 计数二进制子串
