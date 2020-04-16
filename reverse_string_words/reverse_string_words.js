@@ -23,7 +23,7 @@ let reverseWords = (str) => {
 }
 
 let a = reverseWords("let's go to school")
-console.log(a,'s')
+// console.log(a,'s')
 
 /**
  *难度大的算法 如何解？
@@ -32,7 +32,15 @@ console.log(a,'s')
  发现输入 和输出的关系，寻找突破点
 
  * 复杂的实现怎么办？
- 实现是  程序 + 数据结构 
+ 实现 =  程序 + 数据结构 
 
  */
 // 计数二进制子串
+// 输入： ’00110011’
+// 输出： 6
+// 解释： 有 6 个子串具有相同连续数量的连续 1 和 0 ； 0011， 01，1100，10，0011，01
+let aa = (str)=> {
+	let arr = str.split('')
+	console.log(arr,'arr')
+}
+aa('00110011')
